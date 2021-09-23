@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSendText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Text"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSendHtml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Html"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnSendText" />
+
+    <Button
+        android:id="@+id/btnSendAttachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Attachment"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnSendHtml" />
+
+    <Button
+        android:id="@+id/btnSendInnerImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Inner Image"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnSendAttachment" />
+
+    <Button
+        android:id="@+id/btnReceive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnSendInnerImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>
